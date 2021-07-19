@@ -99,7 +99,7 @@ SET(EXTRA_OPERATORS "" CACHE PATH "EXTRA OPERATORS PATH")
 #---------------------------------------------
 # GPU support
 #---------------------------------------------
-set(USE_CUDA OFF CACHE BOOL "Build with CUDA support")
+#set(USE_CUDA OFF CACHE BOOL "Build with CUDA support")
 set(USE_CUDNN OFF CACHE BOOL "Build with cudnn support, if found")
 
 # Target NVIDIA GPU achitecture.
@@ -112,7 +112,7 @@ set(USE_CUDNN OFF CACHE BOOL "Build with cudnn support, if found")
 # When compiling on a machine without GPU, autodetection will fail and you
 # should instead specify the target architecture manually to avoid excessive
 # compilation times.
-set(MXNET_CUDA_ARCH "Auto" CACHE STRING "Target NVIDIA GPU achitecture")
+#set(MXNET_CUDA_ARCH "Auto" CACHE STRING "Target NVIDIA GPU achitecture")
 
 
 #----------------------------
@@ -128,7 +128,7 @@ set(USE_CPP_PACKAGE OFF CACHE BOOL "Build C++ Package")
 set(USE_INT64_TENSOR_SIZE OFF CACHE BOOL "Use int64_t to represent the total number of elements in a tensor")
 
 # Other GPU features
-set(USE_NCCL "Use NVidia NCCL with CUDA" OFF)
+#set(USE_NCCL "Use NVidia NCCL with CUDA" OFF)
 set(NCCL_ROOT "" CACHE BOOL "NCCL install path. Supports autodetection.")
-set(ENABLE_CUDA_RTC ON CACHE BOOL "Build with CUDA runtime compilation support")
-set(USE_NVTX ON CACHE BOOL "Build with NVTX support")
+#set(ENABLE_CUDA_RTC ON CACHE BOOL "Build with CUDA runtime compilation support")
+#set(USE_NVTX ON CACHE BOOL "Build with NVTX support")
